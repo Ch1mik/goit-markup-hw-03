@@ -105,6 +105,7 @@ img {
   letter-spacing: 0.03em;
   font-weight: 800;
   font-size: 18px;
+  align-items: center;
 }
 .web {
   color: var(--buttons-color);
@@ -294,7 +295,11 @@ footer {
 }
 /*Портфоліо */
 .buttons {
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .button {
   background: var(--secondary-bg-tx-color);
@@ -302,11 +307,34 @@ footer {
   color: var(--buttons-color);
   font-weight: 500;
   line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
   background: var(--color-hover-focus);
   color: var(--accent-color);
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+.card-item {
+  flex-basis: calc((100% - 48px) / 3);
+  padding-bottom: 48px;
+}
+.card-text {
+  width: 360px;
+  height: 120px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
 }
 .project-title {
   font-weight: 500;
@@ -314,6 +342,7 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-backgroud-color);
+  padding-bottom: 8px;
 }
 .project-name {
   line-height: 1.5;
